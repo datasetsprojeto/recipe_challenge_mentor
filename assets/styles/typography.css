@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-regular);
   color: var(--color-stone-900);
   line-height: var(--line-height-none);
-  margin-bottom: var(--spacing-lg);
+  margin-block-end: var(--spacing-lg);
 }
 
 .section-title {
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-regular);
   color: var(--color-brown-800);
-  margin-bottom: var(--spacing-lg);
+  margin-block-end: var(--spacing-lg);
 }
 
 .prep-time-title {
@@ -40,14 +40,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   color: var(--color-rose-800);
-  margin-bottom: var(--spacing-md);
+  margin-block-end: var(--spacing-md);
 }
 
 .recipe-description,
 .nutrition-description {
   color: var(--color-stone-600);
   line-height: var(--line-height-normal);
-  margin-bottom: var(--spacing-xl);
+  margin-block-end: var(--spacing-xl);
 }
 
 strong {
