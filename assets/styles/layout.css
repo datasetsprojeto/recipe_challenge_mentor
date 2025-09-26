@@ -1,0 +1,36 @@
+/* Layout */
+.recipe-container {
+  width: 100%;
+  max-width: var(--max-width-content);
+}
+
+.recipe-card {
+  background: var(--color-white);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 300px;
+  background-image: url('../images/image-omelette.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.recipe-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+section {
+  margin-bottom: var(--spacing-xl);
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+}

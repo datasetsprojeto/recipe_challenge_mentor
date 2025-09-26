@@ -1,0 +1,146 @@
+/* Components */
+.prep-time {
+  background-color: var(--color-rose-50);
+  padding: var(--spacing-2xl);
+  padding-left: var( --spacing-x);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.prep-time-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prep-time-list li {
+  position: relative;
+  padding-left: var(--spacing-2xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-stone-600);
+  line-height: var(--line-height-normal);
+}
+
+.prep-time-list li::before {
+  content: "•";
+  color: var(--color-rose-800);
+  position: absolute;
+  left: var(--spacing-sm);
+  font-weight: bold;
+}
+
+.prep-time-list li:last-child {
+  margin-bottom: 0;
+}
+
+.ingredients {
+  padding-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+.ingredients-list {
+  list-style: none;
+}
+
+.ingredients-list li {
+  position: relative;
+  padding-left: var(--spacing-2xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-stone-600);
+  line-height: var(--line-height-normal);
+}
+
+.ingredients-list li::before {
+  content: "•";
+  color: var(--color-brown-800);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.ingredients-list li:last-child {
+  margin-bottom: 0;
+}
+
+.instructions {
+  padding-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+.instructions-list {
+  counter-reset: step-counter;
+  list-style: none;
+}
+
+.instructions-list li {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: var(--spacing-2xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-stone-600);
+  line-height: var(--line-height-normal);
+}
+
+.instructions-list li::before {
+  content: counter(step-counter) ".";
+  color: var(--color-brown-800);
+  font-weight: var(--font-weight-bold);
+  position: absolute;
+  left: 0;
+}
+
+.instructions-list li:last-child {
+  margin-bottom: 0;
+}
+
+.nutrition-table {
+  width: 100%;
+  margin-top: var(--spacing-lg);
+}
+
+.nutrition-row {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+.nutrition-row:first-child {
+  padding-top: var(--spacing-md);
+}
+
+.nutrition-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.nutrition-label {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-stone-600);
+}
+
+.nutrition-value {
+  margin: auto;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brown-800);
+}
+
+.attribution {
+  font-size: 11px;
+  color: var(--color-stone-600);
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  text-decoration: underline;
+}

@@ -1,0 +1,67 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    align-items: flex-start;
+  }
+  
+  .recipe-card {
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .recipe-image {
+    border-radius: 0;
+    margin-bottom: 0;
+    height: 240px;
+  }
+  
+  .recipe-content {
+    padding: var(--spacing-2xl) var(--spacing-xl) var(--spacing-xl);
+  }
+  
+  .recipe-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .section-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .prep-time {
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .nutrition-row {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  section {
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 376px) {
+  .recipe-content {
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-md);
+  }
+  
+  .recipe-title {
+    font-size: 1.875rem;
+  }
+  
+  .prep-time {
+    padding: var(--spacing-md);
+  }
+
+  .prep-time-list li  {
+    max-width: 250px;
+    width: 100%;
+  }
+}
