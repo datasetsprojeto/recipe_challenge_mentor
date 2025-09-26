@@ -114,6 +114,8 @@
 }
 
 .nutrition-label {
+  max-width: 58.08px;
+  width: 100%;
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
   color: var(--color-stone-600);
@@ -121,6 +123,8 @@
 
 .nutrition-value {
   margin: auto;
+  max-width: 55.313px;
+  width: 100%;
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
   color: var(--color-brown-800);
